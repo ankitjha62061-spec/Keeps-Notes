@@ -2,6 +2,7 @@ import React from 'react'
 import "./assets/css/app.css";
 import Navbar from './components/Navbar';
 import NoteCard from './components/NoteCard';
+import UpsertNote from './components/UpsertNote';
 const App = () => {
   return (
     <div>
@@ -28,13 +29,16 @@ const App = () => {
 <NoteCard/>
 <NoteCard/>
 <NoteCard/>
-
-
-
-
-
-
+<NoteCard/>
+<NoteCard/>
+<NoteCard/>
+<NoteCard/>
+<NoteCard/>
+<NoteCard/>
+<NoteCard/>
 </div>
+
+<UpsertNote/>
 
 </div>
 </div>

@@ -14,6 +14,8 @@ const NoteCard = () => {
 <span className="card-details">read more</span>
 <div className="card-footer">
 
+{/* for time and date  */}
+
   <span className="card-timline">
   {new Date().toLocaleString("en-IN", {
   })}
@@ -24,13 +26,10 @@ const NoteCard = () => {
     <div className="action-item-delete"> <i className="fa-solid fa-trash-can"></i></div>
 
 
-<i class=""></i>
- </div>
-</div>
-
-      </div>
-    </div>
-  )
-}
+  </div>
+  </div>
+   </div>
+  </div>
+  )}
 
 export default NoteCard

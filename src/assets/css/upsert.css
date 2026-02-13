@@ -1,0 +1,35 @@
+.upsert-note {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+}
+
+.upsert-wrapper {
+  width: 40%;
+  min-height: 300px;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.upsert-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upsert-header .close-btn i {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}

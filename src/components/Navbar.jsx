@@ -35,15 +35,26 @@ const Navbar = () => {
         className="palette-items"
          ></div>
         ))}
+     </div> 
+
+      
 
 
 
-          </div>
-          <i className="fa-solid fa-circle-half-stroke"></i> 
-            </div>
+<div className="nav-icons">
+  <div className="nav-icon">
+    <i className="fa-solid fa-circle-half-stroke"></i>
+  </div>
 
-            <div className="nav-icon">
-          <i className="fa-solid fa-plus"></i>            
+  <div className="nav-icon">
+    <i className="fa-solid fa-plus"></i>
+  </div>
+</div>
+
+
+
+
+
          </div>
         </nav>
        </div>
