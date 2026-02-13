@@ -19,13 +19,20 @@ const UpsertNote = () => {
               placeholder="Title"
                className="input-form" 
                />
+
+
             
-            <textarea placeholder="Enter yours note"  ></textarea>
+            <textarea className="textarea-form" 
+            placeholder="Enter yours note"  >
+           </textarea>
+
+
             <div className="upsert-actions">
-            <buttton className="ckear-btn">clear</buttton>
+            <button className="clear-btn">clear</button>
             <button className="save-btn">Save</button>
             </div>
             </form>
+
             </div>
             </div>
   )

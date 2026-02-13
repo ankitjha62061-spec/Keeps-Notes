@@ -3,6 +3,7 @@ import "./assets/css/app.css";
 import Navbar from './components/Navbar';
 import NoteCard from './components/NoteCard';
 import UpsertNote from './components/UpsertNote';
+import NoteDetails from './components/NoteDetails';
 const App = () => {
   return (
     <div>
@@ -39,6 +40,8 @@ const App = () => {
 </div>
 
 <UpsertNote/>
+
+<NoteDetails/>
 
 </div>
 </div>
