@@ -1,6 +1,6 @@
 import "../assets/css/upsert.css";
 
-const UpsertNote = () => {
+const UpsertNote = ({setOpen}) => {
   return (
     <div className="upsert-note" >
         
@@ -8,7 +8,7 @@ const UpsertNote = () => {
       <div className="upsert-wrapper">
        <div className="upsert-header">
        <h2 className="heading">Add Note</h2> 
-       <div className="close-btn">
+       <div className="close-btn" onClick={()=>setOpen(false)} >
         <i className="fa-solid fa-xmark"></i>
         </div>       
         </div>

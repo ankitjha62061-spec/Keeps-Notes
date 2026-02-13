@@ -1,12 +1,14 @@
 import React from 'react'
 
 import "../assets/css/details.css";
-const NoteDetails = () => {
+const NoteDetails = ({setView}) => {
+
+
   return (
     <div className='note-details'>
      <div className="details-wrapper">
 
-        <div className="details-back-btn">
+        <div className="details-back-btn" onClick={()=>setView(true)} >
             <i className="fa-solid fa-arrow-left"></i>
         </div>
 

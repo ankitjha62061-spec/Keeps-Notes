@@ -1,16 +1,40 @@
-# React + Vite
+import React from 'react'
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+import "../assets/css/details.css";
+const NoteDetails = ({setView}) => {
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  return (
+    <div className='note-details'>
+     <div className="details-wrapper">
 
-## React Compiler
+        <div className="details-back-btn" onClick={()=>setView(false)} >
+            <i className="fa-solid fa-arrow-left"></i>
+        </div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+        <h2 className="details-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Incidunt animi assumenda similique veniam eligendi labore dolore optio velit 
+            corporis atque.
+            </h2>
 
-## Expanding the ESLint configuration
+<span className="details-timeline">
+  {new Date().toDateString()}
+</span>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+          <div className="details-body">
+
+    <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum velit modi, dolorem 
+    sapiente illum ex eligendi magnam, omnis, ipsum sed fuga? Modi quo delectus, nostrum qui 
+    sequi quod in adipisci!
+    </p>
+
+          </div>
+
+     </div>
+   </div>
+  );
+}
+
+export default NoteDetails
